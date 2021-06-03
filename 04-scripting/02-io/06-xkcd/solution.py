@@ -17,7 +17,7 @@ def fetch_data(n):
 
     with urllib.request.urlopen(url) as stream:
         # decode turns way bytes into a string
-        data = stream.read().decode('utf-8')
+        data = stream.read().decode('utf-8')   #ELIAN: Decode lijkt hier optioneel?
 
     return json.loads(data)
 
